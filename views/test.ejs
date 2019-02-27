@@ -1,0 +1,14 @@
+<%- include('header') -%>
+	<div class="container">
+		<h2 class="text-danger">Vista Test de EJS</h2>
+		<div class="row justify-content-center">
+			<% usuarios.forEach(function (unUsuario) { %>
+				<div class="col-sm-3">
+					<%= unUsuario.name %> <%= unUsuario.lastName %>
+					<br>
+					<img src="<%= unUsuario.avatar %>" width="100%">
+				</div>
+			<% }) %>
+		</div>
+	</div>
+<%- include('footer') -%>
